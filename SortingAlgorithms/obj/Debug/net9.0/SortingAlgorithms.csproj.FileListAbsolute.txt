@@ -26,3 +26,4 @@ C:\Users\Anwender\repos\Algorithmen_und_Datenstrukturen\SortingAlgorithms\Sortin
 C:\Users\Anwender\repos\Algorithmen_und_Datenstrukturen\SortingAlgorithms\SortingAlgorithms\obj\Debug\net9.0\SortingAlgorithms.pdb
 C:\Users\Anwender\repos\Algorithmen_und_Datenstrukturen\SortingAlgorithms\SortingAlgorithms\obj\Debug\net9.0\SortingAlgorithms.genruntimeconfig.cache
 C:\Users\Anwender\repos\Algorithmen_und_Datenstrukturen\SortingAlgorithms\SortingAlgorithms\obj\Debug\net9.0\ref\SortingAlgorithms.dll
+C:\Users\Anwender\repos\Algorithmen_und_Datenstrukturen\SortingAlgorithms\SortingAlgorithms\obj\Debug\net9.0\SortingAlgorithms.sourcelink.json
