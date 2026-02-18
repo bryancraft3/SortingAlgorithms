@@ -163,7 +163,52 @@ namespace SortingAlgorithms
       Console.Clear();
 
       // BubbleSortAnimation(unsortedArray, 5, 4, false, (ConsoleColor)7);
-      SortVisualizer.BubbleSortAnimationWithAxisLabels(unsortedArray, 5, true, (ConsoleColor)7);
+      Console.WriteLine("Bubble Sort visualization:");
+      Console.Write("Set the animation speed (1 - 1000): ");
+      string? input = Console.ReadLine();
+      int inc = 2;
+      int value;
+      bool inputValid = false;
+
+      if (int.TryParse(input, out value))
+      {
+        if (value > 0 && value <= 1000)
+        {
+          inputValid = true;
+        }
+      }
+     
+      while (!inputValid)
+      {
+        ConsoleUtils.SetCursorPosition(0, inc++);
+        Console.Write("Only the range (1 - 1000) is valid, try again: ");
+        input = Console.ReadLine();
+        if (int.TryParse(input, out value))
+        {
+          if (value > 0 && value <= 1000)
+          {
+            inputValid = true;
+          }
+        }
+      }
+      Console.Clear();
+      Console.WriteLine("Press Enter to start the animation...");
+      Console.ReadLine();
+
+      Console.Clear();
+      SortVisualizer.BubbleSortAnimationWithAxisLabels(unsortedArray, value, false, (ConsoleColor)7);
+      Console.WriteLine("\nPress Enter to start the animation(different color)...");
+      Console.ReadLine();
+      
+      Console.Clear();
+      SortVisualizer.BubbleSortAnimationWithAxisLabels(unsortedArray, value, false, (ConsoleColor)10);
+      Console.WriteLine("\nPress Enter to start the visualization(manual steps)...");
+      Console.ReadLine();
+      
+      Console.Clear();
+      SortVisualizer.BubbleSortAnimationWithAxisLabels(unsortedArray, value, true, (ConsoleColor)7);
+      Console.WriteLine("\nPress Enter to exit...");
+      Console.ReadLine();
     }
 
     /// <summary>

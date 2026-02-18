@@ -17,6 +17,22 @@ namespace SortingAlgorithms
     private static void Main(string[] args)
     {
       SortVisualizer sortVisual = new SortVisualizer();
+      Console.Clear();
+      Console.WriteLine("============================================");
+      Console.WriteLine("       Sorting Algorithms Visualizer       ");
+      Console.WriteLine("============================================");
+      Console.WriteLine("This program demonstrates several classic\n" +
+                        "algorithms using an interactive console-\n" +
+                        "based visualization.");
+      Console.WriteLine("\nYou can watch how each algorithm\n" +
+                        "manipulates the array step-by-step, compare\n" + 
+                        "their behavior, and explore the\n" +
+                        "implementation in the library.");
+      Console.WriteLine("\nAlgorithms included:");
+      Console.WriteLine(" - Bubble Sort");
+      Console.WriteLine("\nPress Enter to continue...");
+      Console.ReadLine();
+      Console.Clear();
       sortVisual.Start();
     }
   }
